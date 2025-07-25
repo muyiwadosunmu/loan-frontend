@@ -1,0 +1,139 @@
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .all-\[unset\] {
+    all: unset;
+  }
+}
+
+:root {
+  --app-background: rgba(252, 252, 252, 1);
+  --body-1-font-family: "Noto Sans", Helvetica;
+  --body-1-font-size: 16px;
+  --body-1-font-style: normal;
+  --body-1-font-weight: 400;
+  --body-1-letter-spacing: 0px;
+  --body-1-line-height: 24px;
+  --body-2-font-family: "Noto Sans", Helvetica;
+  --body-2-font-size: 14px;
+  --body-2-font-style: normal;
+  --body-2-font-weight: 400;
+  --body-2-letter-spacing: 0px;
+  --body-2-line-height: 22px;
+  --button-text-large-font-family: "Noto Sans", Helvetica;
+  --button-text-large-font-size: 15px;
+  --button-text-large-font-style: normal;
+  --button-text-large-font-weight: 400;
+  --button-text-large-letter-spacing: 0px;
+  --button-text-large-line-height: 26px;
+  --graygray-3: rgba(221, 221, 221, 1);
+  --graygray-5: rgba(198, 198, 198, 1);
+  --graygray-6: rgba(156, 156, 156, 1);
+  --graygray-7: rgba(125, 125, 125, 1);
+  --graygray-8: rgba(94, 94, 94, 1);
+  --heading-bold-font-family: "Lora", Helvetica;
+  --heading-bold-font-size: 32px;
+  --heading-bold-font-style: normal;
+  --heading-bold-font-weight: 700;
+  --heading-bold-letter-spacing: 0px;
+  --heading-bold-line-height: 48px;
+  --prymain-primary-color: rgba(42, 77, 92, 1);
+  --redred-4: rgba(255, 85, 85, 1);
+  --subtitle-1-font-family: "Noto Sans", Helvetica;
+  --subtitle-1-font-size: 16px;
+  --subtitle-1-font-style: normal;
+  --subtitle-1-font-weight: 600;
+  --subtitle-1-letter-spacing: 0px;
+  --subtitle-1-line-height: 24px;
+  --subtitle-2-font-family: "Noto Sans", Helvetica;
+  --subtitle-2-font-size: 14px;
+  --subtitle-2-font-style: normal;
+  --subtitle-2-font-weight: 600;
+  --subtitle-2-letter-spacing: 0px;
+  --subtitle-2-line-height: 22px;
+  --white: rgba(255, 255, 255, 1);
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 47.4% 11.2%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+
+    --card: transparent;
+    --card-foreground: 222.2 47.4% 11.2%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 215 20.2% 65.1%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 224 71% 4%;
+    --foreground: 213 31% 91%;
+
+    --muted: 223 47% 11%;
+    --muted-foreground: 215.4 16.3% 56.9%;
+
+    --accent: 216 34% 17%;
+    --accent-foreground: 210 40% 98%;
+
+    --popover: 224 71% 4%;
+    --popover-foreground: 215 20.2% 65.1%;
+
+    --border: 216 34% 17%;
+    --input: 216 34% 17%;
+
+    --card: transparent;
+    --card-foreground: 213 31% 91%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 1.2%;
+
+    --secondary: 222.2 47.4% 11.2%;
+    --secondary-foreground: 210 40% 98%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 216 34% 17%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
