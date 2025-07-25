@@ -1,9 +1,11 @@
 import { EyeIcon } from "lucide-react";
-import React from "react";
 import { Button } from "../../components/ui/button";
 import { Card, CardContent } from "../../components/ui/card";
 import { Checkbox } from "../../components/ui/checkbox";
 import { Input } from "../../components/ui/input";
+// Import images for optimization
+import logoImg from "/logo.png";
+import peopleImg from "/people.png";
 
 export const LogInAsAClient = (): JSX.Element => {
   // Data for the form fields
@@ -32,14 +34,14 @@ export const LogInAsAClient = (): JSX.Element => {
           <img
             className="absolute w-[198px] h-[97px] top-6 left-[45px] z-10"
             alt="Team Achieve Logo"
-            src="/image-30.png"
+            src={logoImg}
           />
 
           <div className="flex flex-col items-center gap-6 absolute top-[168px] left-[65px] right-[65px]">
             <img
               className="w-full max-w-[626px] h-auto object-cover"
               alt="People smiling together"
-              src="/image-31.png"
+              src={peopleImg}
             />
 
             <div className="flex flex-col items-center gap-2 text-center">
@@ -56,12 +58,12 @@ export const LogInAsAClient = (): JSX.Element => {
 
         {/* Right side with login form */}
         <div className="flex-1 flex flex-col items-center justify-center px-4 py-8 lg:px-8 lg:py-0 bg-white lg:bg-app-background">
-          {/* Mobile logo */}
-          <div className="lg:hidden mb-8">
+          {/* Logo above login form - visible on both mobile and desktop */}
+          <div className="mb-8">
             <img
               className="w-[150px] h-auto"
               alt="Team Achieve Logo"
-              src="/image-30.png"
+              src={logoImg}
             />
           </div>
 
